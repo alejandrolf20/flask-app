@@ -15,7 +15,7 @@ pipeline {
             stages {
                 stage('Clone') {
                     steps {
-                        git branch:'master', url:'https://github.com/alejandrolf20/flask-app.git'
+                        git branch:'main', url:'https://github.com/alejandrolf20/flask-app.git'
                     }
                 }
                 stage('Install') {
@@ -35,7 +35,7 @@ pipeline {
             stages {
                 stage('CloneAnfitrion') {
                     steps {
-                        git branch:'master', url:'https://github.com/alejandrolf20/flask-app.git'
+                        git branch:'main', url:'https://github.com/alejandrolf20/flask-app.git'
                     }
                 }
                 stage('BuildImage') {
